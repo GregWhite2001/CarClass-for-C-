@@ -12,9 +12,18 @@ using System;
 
 namespace CarClass
 {
-    class CarTest
+    public class Car
     {
-        public static void Main(string[] args)
+        //default color is red
+        string color = "red";
+        //to be implemented
+        string tires = "well worn";
+        //default car is a sedan
+        string carType = "sedan";
+        //sedans have 3 storage spots
+        string[] storage = new string[3] {"nothing","nothing","nothing"};
+
+        static void Main(string[] args)
         {
             Console.WriteLine("---------------First Car---------------");
             Car car = new Car();
@@ -29,19 +38,6 @@ namespace CarClass
             getStorage(car2, getCarType(car2));
 
         }
-    }
-    public class Car
-    {
-        //default color is red
-        string color = "red";
-        //to be implemented
-        string tires = "well worn";
-        //default car is a sedan
-        string carType = "sedan";
-        //sedans have 3 storage spots
-        string[] storage = new string[3] {"nothing","nothing","nothing"};
-
-        
 
         static void getPaintJob(Car car, string color)
         {
